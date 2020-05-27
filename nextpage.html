@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Services</title>
+    <!-- css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div>
+        <h1 class="heading">Beauty Center</h1>
+    </div>
+<!-- navbar -->
+    <div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nextpage.html">Hair Services</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Our masters</a></li>
+            <li><a>Hair Services</a></li>
+            <li><a>Body Treatments</a></li>
+            <li><a>Facial Treatments</a></li>
+            <li><a>Contacts</a></li>
+            <li><a>Sales</a></li>
+        </ul>
+    </div>
+
+    <!-- heading -->
+    <h1 class="heading-hair">Hair Services</h1>
+
+    <button class="accordion">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path
+                d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+            </path>
+        </svg>Hair cut
+        <i class="arrow down arrow-position"></i>
+    </button>
+
+    <div class="panel">
+        <p class="text-panel">Lorem</p>
+    </div>
+
+
+    <button class="accordion">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path
+                d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+            </path>
+        </svg>Hair coloring
+        <i class="arrow down arrow-position"></i>
+    </button>
+
+    <div class="panel">
+        <p class="text-panel">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
+    </div>
+
+
+    <button class="accordion">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path
+                d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+            </path>
+        </svg>Hair care procedures
+        <i class="arrow down arrow-position"></i>
+    </button>
+
+    <div class="panel">
+        <p class="text-panel">Lorem</p>
+    </div>
+
+
+    <button class="accordion">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path
+                d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+            </path>
+        </svg>Occasional hairstyles
+        <i class="arrow down arrow-position"></i>
+    </button>
+
+    <div class="panel">
+        <p class="text-panel">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
+    </div>
+
+    <div class="container">
+        <img class="cosmetic-img" src="images/cosmetic.jfif">
+    </div>
+
+
+    <!--js  -->
+    <script>
+        let acc = document.getElementsByClassName("accordion");
+        let i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                let panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
